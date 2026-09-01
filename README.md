@@ -21,9 +21,12 @@ en interne (dossier `.git`, objets, hachage du contenu).
 - `test.c` — petit programme de test.
 
 ### Compilation
+Nécessite **zlib** et **OpenSSL** (utilisées par `add` pour la compression et le
+hachage SHA-1 des objets) :
 ```bash
-gcc src/init.c   src/utils.c                     -o init
-gcc src/add.c    src/utils.c src/git_object.c    -o add
+sudo apt install zlib1g-dev libssl-dev   # Debian/Ubuntu
+gcc src/init.c   src/utils.c                                -o init
+gcc src/add.c    src/utils.c src/git_object.c  -lz -lcrypto  -o add
 ```
 
 ### Note sur l'historique
@@ -53,9 +56,12 @@ directory, objects, content hashing).
 - `test.c` — a small test program.
 
 ### Build
+Requires **zlib** and **OpenSSL** (used by `add` for compression and SHA-1
+hashing of objects):
 ```bash
-gcc src/init.c   src/utils.c                     -o init
-gcc src/add.c    src/utils.c src/git_object.c    -o add
+sudo apt install zlib1g-dev libssl-dev   # Debian/Ubuntu
+gcc src/init.c   src/utils.c                                -o init
+gcc src/add.c    src/utils.c src/git_object.c  -lz -lcrypto  -o add
 ```
 
 ### Note about history
