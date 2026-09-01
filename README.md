@@ -1,8 +1,8 @@
 # MyGit — une réimplémentation minimale de Git en C
 
-> 🇫🇷 Version française ci-dessous — 🇬🇧 English version below.
+> Version française ci-dessous — English version below.
 
-## 🇫🇷 Français
+## Français
 
 **MyGit** est une réimplémentation pédagogique de quelques commandes de **Git**,
 écrite en **C**, dans le but de comprendre en profondeur comment Git fonctionne
@@ -34,7 +34,7 @@ par le Git officiel. Le code présent ici correspond à la dernière version du 
 
 ---
 
-## 🇬🇧 English
+## English
 
 **MyGit** is an educational reimplementation of a few **Git** commands, written in
 **C**, aimed at deeply understanding how Git works internally (the `.git`
